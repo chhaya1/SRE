@@ -14,6 +14,9 @@ find . -type f | sed 's|^.*/||' | sort | uniq -c | sort -nr
 
 # Problem 4: Script that copies all files matching certain pattern from one directory to another. Script should write logs in a file, which can be used for later debugging.
 
+# Problem 5: Bash command hat lists all files in a directory and its sub-directories.
+find ./ -type f
+
 # Problem 6: Create a script that displays CPU stats, Free RAM, and disk usage and logs it to a file.
 {
   echo "CPU Stats:"
