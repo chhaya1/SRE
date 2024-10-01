@@ -8,7 +8,7 @@
     # Download the file using command and not the GUI
     wget https://raw.githubusercontent.com/shashikarsiddharth/sre-devops-cohort-examples/main/resources/nginx-dummy.log 
 
-    # Parse the different status code from the Nginx access log file. (ss)
+    # Parse the different status code from the Nginx access log file. *
     awk '{print $9}' nginx-dummy.log | sort | uniq -c | sort -nr
 
 

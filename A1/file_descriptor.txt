@@ -1,0 +1,24 @@
+Problem 2:
+
+There are 3 standard file descriptors;
+
+stdin (0) - File descriptor 0, used for input from keyboard.
+stdout (1) - File descriptor 1, used for output to the terminal or console.
+stderr (2) - File descriptor 2, used for output error messages.
+
+Problem 3: What is the significance of 2>&1?
+
+File Descriptors:
+
+In Unix/Linux, processes have three standard file descriptors:
+0: Standard Input (stdin)
+1: Standard Output (stdout)
+2: Standard Error (stderr)
+
+Redirection:
+
+The > operator is used to redirect output to a file or another location. This 2>, it specifically refers to redirecting stderr.
+The & symbol with number indicates that a number is a file descriptor  not a file name.
+
+Conclusion:
+The 2>&1 means "redirect stderr (file descriptor 2) to the same location as stdout (file descriptor 1)".
