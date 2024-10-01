@@ -1,0 +1,2 @@
+cp: target './destination/' is not a directory
+cp: cannot stat './source/*.txt': No such file or directory
